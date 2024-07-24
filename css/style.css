@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1900px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    border: 10px solid gray;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    animation-name: parrak;
+    animation-duration: 0.15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.box1,
+.box2 {
+    width: 500px;
+    height: 50px;
+    border-radius: 0px 50px 0px 50px;
+    position: absolute;
+}
+
+.box1 {
+    background-color: red;
+}
+.box2 {
+    background-color: blue;
+    transform: rotate(90deg);
+}
+.box3{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border-radius: 50%;
+    z-index: 2;
+}
+@keyframes parrak{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
